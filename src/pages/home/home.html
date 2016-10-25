@@ -8,9 +8,7 @@
 
 <ion-content padding>
 
-  <ion-card>
-    <img src="../assets/img/logo.png"/>
-  </ion-card>
+<ion-icon name="analytics"></ion-icon>
 
 
   <ion-list>
@@ -31,6 +29,12 @@
 </div>
 OR
 <div padding>
-  <button block ion-button color="primary" (click)="openSignUpPage()">Sign Up</button>
+  <button block ion-button color="primary" (click)="goToSignUp()">Sign Up</button>
+</div>
+<div padding>
+  <button class="button icon ion-gear-a" (click)="goToForgot()">Forgot Password?</button>
+</div>
+<div padding>
+  <button class="button icon ion-gear-a" (click)="goToReset()">Reset Password</button>
 </div>
 </ion-content>

@@ -2,17 +2,18 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { SignUpPage } from '../pages/signup/signup';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { ForgotPage } from '../pages/forgot/forgot';
+import { ResetPage } from '../pages/reset/reset';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    ContactPage,
     HomePage,
 	SignUpPage,
-    TabsPage
+	ForgotPage,
+	ResetPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,10 +21,10 @@ import { TabsPage } from '../pages/tabs/tabs';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    ContactPage,
     HomePage,
 	SignUpPage,
-    TabsPage
+	ForgotPage,
+	ResetPage
   ],
   providers: []
 })

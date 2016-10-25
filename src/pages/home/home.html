@@ -25,16 +25,16 @@
 
   </ion-list>
 <div padding>
-  <button block ion-button color="primary">Sign In</button>
+  <button ion-button round>Sign In</button>
 </div>
-OR
+Don't have Account?
 <div padding>
-  <button block ion-button color="primary" (click)="goToSignUp()">Sign Up</button>
-</div>
-<div padding>
-  <button class="button icon ion-gear-a" (click)="goToForgot()">Forgot Password?</button>
+  <button ion-button round (click)="goToSignUp()">Sign Up</button>
 </div>
 <div padding>
-  <button class="button icon ion-gear-a" (click)="goToReset()">Reset Password</button>
+  <button ion-button clear (click)="goToForgot()">Forgot Password?</button>
+</div>
+<div padding>
+  <button ion-button clear (click)="goToReset()">Reset Password</button>
 </div>
 </ion-content>
